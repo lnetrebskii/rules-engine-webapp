@@ -4,8 +4,11 @@
 
 ### Prerequisites
 [Node.js](https://nodejs.org/en) v10.x or later
+
 [npm](https://www.npmjs.com/) v5.x or later
+
 [git](https://git-scm.com/) v2.14.1 or later
+
 [Angular CLI](https://github.com/angular/angular-cli)
 
 #### Setup Amplify
