@@ -1,0 +1,29 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="input-group no-border col-md-3">
+                <input type="text" value="" class="form-control" placeholder="Search...">
+                <button mat-raised-button type="submit" class="btn btn-white btn-round btn-just-icon">
+                    <i class="material-icons">search</i>
+                    <div class="ripple-container"></div>
+                </button>
+            </div>
+            <a href="javascript:void(0)" class="btn btn-primary btn-round col-md-2">Add Camera</a>
+        </div>
+        <div class="row">
+            <div class="col-md-3" *ngFor="let source of sources">
+                <div class="card card-profile">
+                    <div class="card-header">
+                        <h4 class="card-title">{{source.name}}</h4>
+                    </div>
+                    <div class="card-body">
+                        <img class="img-thumbnail" [src]="source.iconUrl">
+                        <p class="card-description">{{source.description}}</p>
+                        <a href="javascript:void(0)" class="btn btn-danger btn-round" (click)="editSource(source)">EDIT</a>
+                        <a href="javascript:void(0)" class="btn btn-default btn-round">DELETE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
